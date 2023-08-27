@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Temperature Converter</title>
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans&display=swap" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+
+	<script src="script.js" defer > </script>
+
+</head>
+
+<body>
+
+	<h1>Celsius to Fahrenheit Converter</h1>
+
+    <div class="container top">
+    	<p>Type in the temperature in celsius and click the button to convert the temperature to fahrenheit.</p>
+
+        <form method="post" action="somephpfile.php" id="convert">
+
+        	<input type="text" name="temperature" id="temperature" placeholder="temperature">
+            <input type="submit" name="converttemp" value="Convert Temperature">
+
+        </form>
+    </div>
+    <div class="container bottom" id="answer">
+    	<h2 class="invisible">Answer goes here</h2>
+    </div>
+
+    <p id="directions">Press the "C" key to switch to Celsius conversion, press the "F" key to switch to Fahrenheit conversion</p>
+
+</body>
+</html>
